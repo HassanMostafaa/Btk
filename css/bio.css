@@ -371,7 +371,7 @@ opacity: 1;
 }
 }
 
-@media screen and ( max-width: 500px){
+@media screen and ( max-width: 600px){
 .info-area{
     display: block;
     text-align: center;
@@ -381,6 +381,11 @@ opacity: 1;
     
     text-align: center;
 
+}
+.pic{
+    margin: 0 auto;
+    
+    text-align: center;
 }
 .card{
     display: block;
