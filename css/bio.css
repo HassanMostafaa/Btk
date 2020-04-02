@@ -374,6 +374,13 @@ opacity: 1;
 @media screen and ( max-width: 700px){
 .info-area{
     display: block;
+    text-align: center;
+}
+.text{
+    margin: 0 auto;
+    
+    text-align: center;
+
 }
 .card{
     display: block;
