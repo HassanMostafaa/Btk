@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+::-webkit-scrollbar {
+    background: black;
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #b93e3e;
+    border-radius: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Abel', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+a{
+    color: #f4f4f4;
+}
+
+.background video {
+    position: fixed;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+
+body {
+    color: white;
+}
+
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    opacity: 0;
+    font-size: 20px;
+    animation: logo 2s forwards;
+    letter-spacing: 3px;
+    font-variant: small-caps;
+}
+
+nav .menu ul {
+    margin: 20px 0;
+    opacity: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    animation: menuUL 3s .5s forwards;
+}
+
+nav .menu ul li {
+    margin: 0 30px;
+}
+ .media {
+     
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    float: right;
+
+
+}
+ .media i {
+    margin: 20px 0;
+    opacity: 0;
+    
+    animation: media 3s 1s forwards;
+}
+
+.active {
+    color: #ff4242;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.content {
+    margin-top: 200px;
+    opacity: 0;
+    animation: contentTXT 3s 1s forwards;
+
+}
+
+.content .head-text {
+    line-height: 50px;
+    font-size: 60px;
+    margin-bottom: 10px;
+
+}
+
+.small-text {
+    color: #ff4242;
+    font-size: 25px;
+    font-weight: lighter;
+    font-variant: initial;
+    letter-spacing: 2px;
+}
+
+.more-content {
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+    text-align: center;
+    font-weight: 500;
+
+    animation: more 5s forwards;
+}
+
+.more-content i {
+    margin: 10px 0 30px 0;
+    font-size: 25px;
+    animation: down 3s infinite;
+    transform: translateY(0);
+}
+
+@keyframes down {
+    0% {
+        transform: translateY(0);
+
+    }
+
+    50% {
+        transform: translateY(20px);
+
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes logo {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@keyframes menuUL {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@keyframes media {
+    0% {
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+@keyframes contentTXT {
+    0% {
+        transform: translateX(-40px);
+
+        opacity: 0;
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+
+
+
+    }
+}
+.more-content a{
+    color: #f4f4f4;
+
+}
+/* grid system for the videos*/
+.container-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 100%;
+
+}
+.box {
+    margin:20px 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border-radius: 5px;
+    overflow: hidden;
+}
+.mailing{
+    
+    background: rgba(22, 22, 22, 0.888);
+    margin: 100px 0 0 0 ;
+    padding: 50px;
+    text-align: center;
+}
+.mailing h1{
+    margin: 20px;
+    font-weight: lighter;
+    color: #ff4242;
+}
+.mailing input{
+    width: 200px ;
+    background: rgba(128, 128, 128, 0.281);
+    border: none;
+    padding: 0 10px;
+    font-size: 14px;
+    margin: 20px 10px;
+
+    color: #f4f4f4;
+    height: 40px;
+}
+.mailing a{
+    border: 1px solid #ff4242;
+    font-style: 20px;
+    color: #ff4242;
+    background: #ff42421c;
+    padding: 10px 20px;
+}
+@media screen and (max-width:700px){
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        height: 100vh;
+    }
+
+    
+
+    .container-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+    
+    }
+
+}
