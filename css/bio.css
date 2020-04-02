@@ -387,6 +387,9 @@ opacity: 1;
     
     text-align: center;
 }
+.pic img{
+    transform: scale(.6);
+}
 .card{
     display: block;
     text-align: center;
