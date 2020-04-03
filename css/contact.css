@@ -181,38 +181,45 @@ nav .menu ul li {
     border-left: 2px solid #ff4242;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 5px;
+    
 
+}
+.form::-webkit-scrollbar{
+    display: auto;
+    background-color: #222;
+    height: 10px;
 }
 
 .form input {
-    width: 380px;
+    width: 350px;
     height: 40px;
     border: none;
-    background: rgba(170, 170, 170, 0.199);
+    background: #222;
+    border: 1px solid #ff4242;
     padding: 0 10px;
     font-size: 17px;
-    margin: 20px 0;
+    margin: 20px  10px;
 }
 
 textarea {
     border: none;
-    background: rgba(179, 179, 179, 0.199);
+    background: #333;
     padding: 10px;
-    margin: 10px 0 30px 0px;
+    margin: 10px 10px 30px 10px;
     font-size: 18px;
-    max-width: auto;
-    min-width: 380px;
+    max-width: 600px;
+    min-width: 350px;
 }
 
-input[type=submit] {
-    font-size: 20px;
+.content .btn{
+    font-size: 30px;
     color: #ff4242;
     border: 1px solid #ff4242;
     background: #ff424213;
-    width: 85%;
+    
+    text-align: center;
 }
 
 #fname {
@@ -222,8 +229,10 @@ input[type=submit] {
 #fname input+span:before {
     content: 'First Name';
     position: absolute;
-    top: 30px;
-    left: 10px;
+    top: 10px;
+    left: 20px;
+    background: #222;
+    padding: 0 5px;
     transition: .5s;
     color: #ff4242;
 }
@@ -231,8 +240,8 @@ input[type=submit] {
 #fname input:focus+span:before {
     content: 'First Name';
     position: absolute;
-    top: 0px;
-    left: 2px;
+    top: -5px;
+    left: 10px;
     color: #ff4242;
     transition: .5s;
 }
@@ -252,9 +261,11 @@ input[type=submit] {
 
 #lname input+span:before {
     content: 'Last Name';
+    background: #222;
+    padding: 0 5px;
     position: absolute;
-    top: 30px;
-    left: 10px;
+    top: 10px;
+    left: 20px;
     transition: .5s;
     color: #ff4242;
 }
@@ -284,8 +295,10 @@ input[type=submit] {
 #email input+span:before {
     content: 'E-mail';
     position: absolute;
-    top: 30px;
-    left: 10px;
+    background: #222;
+    padding: 0 5px;
+    top: 10px;
+    left: 20px;
     transition: .5s;
     color: #ff4242;
 }
@@ -315,9 +328,11 @@ input[type=submit] {
 
 #subject input+span:before {
     content: 'Subject';
+    background: #222;
+    padding: 0 5px;
     position: absolute;
-    top: 30px;
-    left: 10px;
+    top: 10px;
+    left: 20px;
     transition: .5s;
     color: #ff4242;
 }
@@ -348,9 +363,11 @@ input[type=submit] {
 #msg textarea+span::before {
     content: 'Message';
     position: absolute;
-    top: 60px;
+    top: 00px;
     left: 10px;
+    background: #333;
     transition: .5s;
+    padding: 0 10px;
     color: #ff4242;
 }
 
