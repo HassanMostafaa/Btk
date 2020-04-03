@@ -274,3 +274,43 @@ nav .menu ul li {
     }
 
 }
+@media screen and (max-width:400px){
+
+    .content .head-text {
+        line-height: 50px;
+        font-size: 30px;
+        margin-bottom: 10px;
+        text-align: center;
+    
+    }
+    .content .small-text{
+        font-size: 20px;
+        letter-spacing: 0;
+        text-align: center;
+
+    }
+    nav {
+
+        display: block;
+        
+    }
+    .logo{
+        text-align: center;
+    }
+    nav .menu ul li {
+        margin: 0 5px;
+    }
+    .media ul li i{
+        margin: 20px 0;
+    }
+    .media {
+     
+        position: absolute;
+        bottom: 2%;
+        right: 5%;
+        float: right;
+    
+    
+    }
+}
+    

@@ -348,7 +348,7 @@ input[type=submit] {
 #msg textarea+span::before {
     content: 'Message';
     position: absolute;
-    top: 20px;
+    top: 60px;
     left: 10px;
     transition: .5s;
     color: #ff4242;
@@ -357,7 +357,7 @@ input[type=submit] {
 #msg textarea:focus+span::before {
     content: 'Message';
     position: absolute;
-    top: -10px;
+    top: 27px;
     left: 2px;
     color: #ff4242;
     transition: .5s;
@@ -367,7 +367,7 @@ input[type=submit] {
 #msg textarea:valid+span::before {
     content: 'Message';
     position: absolute;
-    top: -10px;
+    top: 27px;
     left: 2px;
     color: #ff4242;
     transition: .5s;
@@ -383,4 +383,29 @@ input[type=submit] {
     .section-1{
         width: 90%;
     }
+}
+
+@media screen and (max-width:400px){
+input {
+    max-width: 250px;
+    min-width: 250px;
+
+}
+
+textarea{
+    max-width: 250px;
+    min-width: 250px;
+
+}
+nav {
+
+    display: block;
+    
+}
+.logo{
+    text-align: center;
+}
+nav .menu ul li {
+    margin: 0 5px;
+}
 }

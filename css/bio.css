@@ -138,6 +138,7 @@ opacity: 1;
     animation: picSlide 2s 2s forwards;
     transform: translateX(-20px);
     opacity: 0;
+    
 
 }
 @keyframes picSlide{
@@ -383,13 +384,20 @@ opacity: 1;
 
 }
 .pic{
-    margin: 0 auto;
-    
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .pic img{
-    transform: scale(.4);
+    transform: scale(.6);
 }
+.head-text{
+    font-size: 20px;
+}
+.s2-head-text{
+    font-size: 30px !important;
+}
+
 .card{
     display: block;
     text-align: center;
@@ -397,3 +405,30 @@ opacity: 1;
 }
 
 }
+
+@media screen and (max-width:400px){
+
+    .content .head-text {
+        line-height: 50px;
+        font-size: 30px;
+        margin-bottom: 10px;
+    
+    }
+    .content .small-text{
+        font-size: 20px;
+        letter-spacing: 0;
+
+    }
+    nav {
+
+        display: block;
+        
+    }
+    .logo{
+        text-align: center;
+    }
+    nav .menu ul li {
+        margin: 0 5px;
+    }
+}
+    
