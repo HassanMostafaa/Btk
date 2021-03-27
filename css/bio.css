@@ -229,6 +229,10 @@ opacity: 1;
    
     
 }
+.card .card-pic img{
+    width: 200px;
+    height: 300px;
+}
 
 .mailing {
 
